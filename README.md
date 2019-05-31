@@ -1,5 +1,10 @@
 # Alien_Invasion
-A simple 2D-game made by Python.
 
-Use W, A, S and D to control the movment of the spaceship, and use Space to shoot.
+一个小项目，按照书上的教程用Pygame做的2D小游戏，名字叫《外星人入侵》。
+
+玩法：
+
+* A、D或←、→控制飞船移动，空格键射击
+* 屏幕内最多只能同时出现三颗子弹，开火要力求精准
+* 飞船碰撞到外星人则游戏结束
 
