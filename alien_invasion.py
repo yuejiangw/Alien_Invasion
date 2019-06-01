@@ -35,15 +35,16 @@ def run_game():
 
         # 监视键盘和鼠标事件
         gf.check_events(ai_settings, screen, ship, bullets)
-        
-        # 飞船移动
-        ship.update()
 
-        # 更新子弹位置并删除已经消失的子弹
-        gf.update_bullets(ai_settings, screen, ship, aliens, bullets)
+        if stats.game_active:        
+            # 飞船移动
+            ship.update()
 
-        # 外星人移动
-        gf.update_aliens(ai_settings, stats, screen, ship, aliens, bullets)
+            # 更新子弹位置并删除已经消失的子弹
+            gf.update_bullets(ai_settings, screen, ship, aliens, bullets)
+
+            # 外星人移动
+            gf.update_aliens(ai_settings, stats, screen, ship, aliens, bullets)
 
         # 更改屏幕上的图像并切换到新的屏幕
         gf.update_screen(ai_settings, screen, ship, aliens, bullets)
