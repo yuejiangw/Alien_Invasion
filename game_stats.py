@@ -14,3 +14,5 @@ class GameStats():
 
         # 重置飞船数量
         self.ships_left = self.ai_settings.ship_limit
+        # 重置积分
+        self.score = 0
