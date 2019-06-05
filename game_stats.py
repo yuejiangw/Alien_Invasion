@@ -11,4 +11,6 @@ class GameStats():
 
     def reset_stats(self):
         """初始化在游戏运行期间可能变化的统计信息"""
+
+        # 重置飞船数量
         self.ships_left = self.ai_settings.ship_limit
