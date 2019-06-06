@@ -14,7 +14,7 @@ def run_game():
     ai_settings = Settings()
     screen = pygame.display.set_mode(
         (ai_settings.screen_width, ai_settings.screen_height),
-        #pygame.FULLSCREEN
+        pygame.FULLSCREEN
     )
     pygame.display.set_caption("Alien Invasion")
 
@@ -51,7 +51,7 @@ def run_game():
             gf.update_bullets(ai_settings, screen, stats, sb, ship, aliens, bullets)
 
             # 外星人移动
-            gf.update_aliens(ai_settings, stats, screen, ship, aliens, bullets)
+            gf.update_aliens(ai_settings, screen, stats, sb, ship, aliens, bullets)
 
         # 更改屏幕上的图像并切换到新的屏幕
         gf.update_screen(ai_settings, screen, stats, sb, ship, aliens, bullets, play_button)
