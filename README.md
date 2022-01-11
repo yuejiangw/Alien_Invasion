@@ -1,27 +1,32 @@
 # Alien_Invasion
 
-用Pygame做的2D小游戏，主题为打外星人。
+A 2D game based on Pygame. You will control a spacecraft to defend against the alien attack.
 
-编译环境为: Python 3.6.3 + Pygame 1.9.4。
+Dependencies: Python 3.6.3 + Pygame 1.9.4
 
-## 界面设计
+## GUI Design
 
-* 界面大小为1300 * 700， 采用全屏显示。
-* 右上角分别为玩家当前得分与当前等级。
-* 屏幕正上方为历史最高纪录。
-* 左上角为剩余的游戏机会。
-* 中间为外星人，会不断的左右移动。
-* 最下方为玩家控制的飞船，可以水平移动。
+* The window size is of 1300 * 700, with full screen display.
+* The top right corner of the window shows the player's current score and current level respectively.
+* The highest ever record is directly above the screen.
+* The top left corner shows the remaining game opportunities.
+* The middle of the window are the aliens, which will keep moving left and right.
+* The bottom is the player-controlled spaceship, which can move horizontally.
 
-## 玩法：
+## Control
 
-* 运行alien_invasion.py文件，进入游戏界面
-* 点击Play按钮开始游戏，按Q键退出游戏。
-* A、D或←、→控制飞船移动，空格键射击
+* Use the following command to execute the `alien_invasion.py` file, enter the game.
+  ```shell
+  python alien_invasion.py
+  ```
+* Press button `Play` to start the game.
+* Press `Q` to exit the game whenever you want.
+* Use `A`, `D` or `←`, `→` to move the spacecraft.
+* Use `Space` to shoot.
 
-## 规则：
+## Rules
 
-* 屏幕内最多只能同时出现三颗飞行的子弹，因此要找准开火时机。
-* 子弹击中外星人时则消灭一个外星人，当屏幕内全部的外星人都被消灭后难度等级会提升一级，游戏的整体速度会加快，同时得分也更高。
-* 飞船碰撞到外星人或外星人到达屏幕底线时则损失一次机会，当剩余机会为0时游戏结束。
+* There can only be a maximum of three flying bullets on the screen at the same time, so you have to find the right time to fire.
+* When all the aliens on the screen are eliminated, the difficulty level will increase by one, and the overall speed of the game will be accelerated and the score will be higher.
+* When the ship collides with the alien or the alien reaches the bottom line of the screen, you lose one chance, and the game ends when the remaining chance is 0.
 
