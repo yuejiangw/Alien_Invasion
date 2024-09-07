@@ -1,4 +1,4 @@
-# Alien_Invasion
+# Alien Invasion
 
 A 2D game based on Pygame. You will control a spacecraft to defend against the alien attack.
 
